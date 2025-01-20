@@ -35,7 +35,7 @@
             <!-- Render the form using Crispy Forms -->
             <form method="post">
                 {% csrf_token %}
-                {{ form|crispy }}
+                {{ collaborate_form|crispy }}
                 <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
         </div>
