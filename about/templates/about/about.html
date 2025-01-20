@@ -30,13 +30,11 @@
                 and we can get the ball rolling!</p>
 
             <!-- add your form here. Your submit button should 
-            have the classes of btn, btn-secondary -->
-            
-            <!-- Render the form using Crispy Forms -->
+                                have the classes of btn, btn-secondary -->
             <form method="post">
+                {{ collaborate_form | crispy }}
                 {% csrf_token %}
-                {{ collaborate_form|crispy }}
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button class="btn btn-secondary" type="submit">Submit</button>
             </form>
         </div>
     </div>
